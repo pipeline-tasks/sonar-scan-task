@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>in.devstream.cicd</groupId>
-    <artifactId>inspect-task</artifactId>
+    <artifactId>sonar-scan-task</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>inspect-task</name>
-    <description>Inspect Task</description>
+    <name>sonar-scan-task</name>
+    <description>Sonar Scan Task</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

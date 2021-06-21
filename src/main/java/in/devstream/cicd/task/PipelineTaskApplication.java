@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j
 @SpringBootApplication
-public class InspectTaskApplication implements ApplicationRunner {
+public class PipelineTaskApplication implements ApplicationRunner {
 
     public static void main(String[] args) {
-        SpringApplication.run(InspectTaskApplication.class, args);
+        SpringApplication.run(PipelineTaskApplication.class, args);
     }
 
     @Override
@@ -23,6 +23,6 @@ public class InspectTaskApplication implements ApplicationRunner {
             log.info(optionName + "=" + args.getOptionValues(optionName));
         });
 
-        new InspectTask(args).run();
+        new SonarScanTask(args).run();
     }
 }
