@@ -16,13 +16,6 @@ public class PipelineTaskApplication implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-
-        log.info("Number of Args: " + args.getOptionNames().size());
-
-        args.getOptionNames().forEach(optionName -> {
-            log.info(optionName + "=" + args.getOptionValues(optionName));
-        });
-
-        new SonarScanTask(args).run();
+        new SonarScanTask(args).run(args);
     }
 }
